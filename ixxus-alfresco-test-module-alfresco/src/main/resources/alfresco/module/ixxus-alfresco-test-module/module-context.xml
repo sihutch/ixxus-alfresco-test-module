@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC '-//SPRING//DTD BEAN//EN' 'http://www.springframework.org/dtd/spring-beans.dtd'>
+<beans>
+
+    <!-- Bootstrap -->
+    <bean id="org_alfresco_module_Calais_dictionaryBootstrap" parent="dictionaryModelBootstrap" depends-on="dictionaryBootstrap">
+        <property name="models">
+            <list>
+                <value>alfresco/module/ixxus-alfresco-test-module/model/content-model.xml</value>
+            </list>
+        </property>
+    </bean>
+    
+    <bean id="webscript.com.ixxus.alfresco.sampleWebScript.get" class="com.ixxus.alfresco.SampleWebScript" parent="webscript"/>
+
+</beans>
